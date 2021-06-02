@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Jogo de apostas</h1>
+    <input type="number" placeholder="Insira 3 sequência de números">
+    <a href="#" class="btn-add">Adicionar</a>
+    <div class="box-numbers">
+        <div class="numbers">
+            <h2 id="number-math"></h2>
+        </div>
+        <div class="numbers">
+            <h2 id="number-math"></h2>
+        </div>
+        <div class="numbers">
+            <h2 id="number-math"></h2>
+        </div>
+    </div>
+    <button>Apostar</button>
+    <div class="points">
+        <h2>Sua pontuação <strong class="text-points"></strong></h2>
+    </div>
+    <!-- Modals -->
+    <div class="modal">
+        <h2>Número apostado</h2>
+        <p class="bet-value"></p>
+    </div>
+    <div class="modal-error">
+        <h2 class="erro-number"></h2>
+    </div>
+    <div class="modal-accept">
+        <h2 class="win">Acertou</h2>
+    </div>
+    <div class="modal-lose">
+        <h2 class="lose"></h2>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

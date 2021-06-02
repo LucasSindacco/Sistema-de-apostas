@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+input {
+    text-align: center;
+    font-size: 1.2rem;
+    width: 50%;
+    padding: .50rem 2rem;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    margin: 2rem 0;
+    cursor: pointer;
+    padding: .70rem 2rem;
+    background-color: #219ebc;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 80rem;
+}
+
+.box-numbers {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: #219ebc;
+    border-radius: .15rem;
+    padding: 3rem 0;
+}
+
+.box-numbers .numbers {
+    background-color: #8ecae6;
+    margin: 0 5rem;
+    width: 100px;
+    box-shadow: 10px 0px 1px rgb(0, 0, 0, 0.25);
+    height: 100px;
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 2rem 0;
+    cursor: pointer;
+    padding: .70rem 2rem;
+    background-color: #219ebc;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 80rem;
+}
+
+.points {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #219ebc;
+    width: 50%;
+    padding: 1rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    text-align: center;
+}
+
+.points h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.modal {
+    position: absolute;
+    top: 1rem;
+    background-color: #219ebc;
+    width: 50%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.modal h2 {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.modal p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.modal-error {
+    position: absolute;
+    top: -20rem;
+    background-color: rgb(160, 28, 28);
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out .3s;
+}
+
+.modal-error.active {
+    top: 1rem;
+    transition: ease-in-out .3s;
+}
+
+.modal-error h2 {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.modal-accept {
+    background-color: rgb(30, 134, 30);
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -50rem;
+    transition: ease-in-out .3s;
+    justify-content: center;
+}
+
+.modal-lose {
+    background-color: rgb(134, 30, 30);
+    width: 40%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    transition: ease-in-out .3s;
+    justify-content: center;
+    left: -50rem;
+}
+
+.modal-lose.active {
+    transition: ease-in-out .3s;
+    left: 1rem;
+}
+
+.modal-lose h2 {
+    color: #fff;
+}
+
+.modal-accept.active {
+    transition: ease-in-out .3s;
+    right: 0;
+}
+
+.modal-accept h2 {
+    color: #fff;
+}
